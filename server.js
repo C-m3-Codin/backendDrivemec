@@ -5,7 +5,7 @@ const userRouter = require("./routes/user-api");
 const requestRouter = require("./routes/request-api");
 const app = express();
 require('dotenv').config()
-const url  = "mongodb://root:example@127.0.0.1:27017/test?authSource=admin"
+const url  = process.env.URL
 
 // Connection to mongodb
 console.log("url is",url);
